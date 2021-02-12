@@ -5,9 +5,7 @@ import android.graphics.Typeface
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatEditText
 
-class EditTextExt : AppCompatEditText {
-    constructor(context: Context?) : super(context)
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+class EditTextExt(context: Context, attrs: AttributeSet) : AppCompatEditText(context, attrs) {
 
     override fun setTypeface(tf: Typeface?) {
         val typeFace = Typeface.createFromAsset(context.assets, "fonts/站酷仓耳渔阳体_W03.ttf")
